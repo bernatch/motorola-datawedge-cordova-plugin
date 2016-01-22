@@ -3,7 +3,12 @@
 <plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
            id="com.bluefletch.motorola"
       version="0.1.0">
+           
     <name>Motorola Cordova Plugin</name>
+    <description>
+               DataWedge Cordova API Plugin
+    </description>
+    <license>Apache 2.0</license>
 
 
     <js-module src="www/datawedge.js" name="MotorolaDataWedge">
