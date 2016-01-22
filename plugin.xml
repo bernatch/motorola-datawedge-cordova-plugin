@@ -9,6 +9,14 @@
                DataWedge Cordova API Plugin
     </description>
     <license>Apache 2.0</license>
+    
+        <engines>
+        <!--
+            Cordova 2.8.0 is all I have tested on - it should work fine with earlier versions.
+            Please modify the below line, test, and submit a PR if it works for you.
+        -->
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
 
 
     <js-module src="www/datawedge.js" name="MotorolaDataWedge">
