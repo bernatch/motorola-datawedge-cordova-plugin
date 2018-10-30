@@ -98,9 +98,8 @@ public class DataWedgeIntentHandler {
     }
 
     protected void enableScanner(boolean shouldEnable) {
-        Intent enableIntent = new Intent("com.motorolasolutions.emdk.datawedge.api.ACTION_SCANNERINPUTPLUGIN");
-        enableIntent.putExtra("com.motorolasolutions.emdk.datawedge.api.EXTRA_PARAMETER", 
-            shouldEnable ? "ENABLE_PLUGIN" : "DISABLE_PLUGIN");
+        Intent enableIntent = new Intent("com.symbol.datawedge.api.ACTION_SCANNERINPUTPLUGIN");
+        enableIntent.putExtra("com.symbol.datawedge.api.ENABLE_DATAWEDGE", shouldEnable);
 
         applicationContext.sendBroadcast(enableIntent);
     }
