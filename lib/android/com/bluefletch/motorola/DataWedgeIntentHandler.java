@@ -98,6 +98,7 @@ public class DataWedgeIntentHandler {
     }
 
     protected void enableScanner(boolean shouldEnable) {
+	Log.i(TAG, "enableScanner: " + shouldEnable);    
         Intent enableIntent = new Intent("com.symbol.datawedge.api.ACTION_SCANNERINPUTPLUGIN");
         enableIntent.putExtra("com.symbol.datawedge.api.ENABLE_DATAWEDGE", shouldEnable);
 
@@ -106,6 +107,7 @@ public class DataWedgeIntentHandler {
 
     public void startScanning(boolean turnOn) {
         synchronized (stateLock) {
+	    Log.i(TAG, "startScanning: " + turnOn); 
             Intent scanOnIntent = new Intent("com.motorolasolutions.emdk.datawedge.api.ACTION_SOFTSCANTRIGGER");
             scanOnIntent.putExtra("com.motorolasolutions.emdk.datawedge.api.EXTRA_PARAMETER", 
                 turnOn ? "START_SCANNING" : "STOP_SCANNING");
