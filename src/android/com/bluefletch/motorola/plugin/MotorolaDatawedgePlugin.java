@@ -147,6 +147,6 @@ public class MotorolaDatawedgePlugin extends CordovaPlugin {
     public void onResume(boolean multitasking)
     {
         super.onResume(multitasking);
-        //wedge.start();
+        wedge.start();
     }
 }
