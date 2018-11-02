@@ -130,7 +130,7 @@ public class MotorolaDatawedgePlugin extends CordovaPlugin {
     public void onPause(boolean multitasking)
     {
         super.onPause(multitasking);
-        wedge.stop();
+        //wedge.stop();
     }
 
     @Override
@@ -147,6 +147,6 @@ public class MotorolaDatawedgePlugin extends CordovaPlugin {
     public void onResume(boolean multitasking)
     {
         super.onResume(multitasking);
-        wedge.start();
+        //wedge.start();
     }
 }
